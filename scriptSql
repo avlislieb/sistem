@@ -1,0 +1,15 @@
+create table if not EXISTS sistem.usuario(
+	id TINYINT PRIMARY KEY AUTO_INCREMENT not null,
+    nome varchar (50) not null,
+    senha varchar (7) not null
+    
+)
+insert into sistem.usuario (nome, senha) values ("teste", "123456");
+
+create table if not exists sistem.notas(
+	idNotas smallint primary key auto_increment not null,
+	empresa varchar(30) not null,
+	descricao char not null,
+	entrega date not null,
+	preco smallint not null
+)

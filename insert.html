@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>sistem</title>
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<table border="1" id="insert_table" cellpadding="10">
+		<form method="post" action="inserir.php">
+		<tr>
+			<td>
+				<input type="text" name="fempresa" placeholder="nome da empresa">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<textarea placeholder="Descrição" name="fdescri" rows="10">
+					
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			
+				<input type="number" name="fvalor" maxlength="10" size="5" placeholder="valor total do produto">R$
+			
+		</tr>
+		<tr>
+			<td>
+			<label>entrega</label>
+
+			<input type="date" name="fdata">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>pago:</label>
+				<input type="radio" name="fpago" checked="checked" id="sim" value="sim">Sim
+				&nbsp
+
+				<input type="radio"  name="fpago" id="nao" value="nao">Não
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="submit" value="enviar">
+			&nbsp
+				<input type="reset" value="limpar">
+		</tr>
+		
+	
+		</form>
+	</table>	
+</body>
+</html>
