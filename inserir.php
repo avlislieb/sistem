@@ -29,6 +29,13 @@ else{
 	$vTotal = $_POST['fvalor'];
 }
 
+if (empty($_POST['funitario'])) {
+	echo $back;
+}
+else{
+	$vUnitario = $_POST['funitario'];
+}
+
 include_once("conexao.php");
 $sql = "INSERT INTO notas (empresa, descricao, entrega, vUnitario, vTotal) VALUES ('$empresa', '$descri','$entrega', '$valor')";
 // echo $sql;
