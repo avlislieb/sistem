@@ -1,6 +1,6 @@
 <?php 
 
-$empresa = $descri  = $valor = "";
+$empresa = $descri  = $vTotal = $vUnitario = "";
 $entrega = date("d/m/Y");
 $back = "<script>alert('Campo não inserido!');window.location.href='insert.html';</script>";
 
@@ -26,11 +26,11 @@ if (empty($_POST['fvalor'])) {
 	echo $back;
 }
 else{
-	$valor = $_POST['fvalor'];
+	$vTotal = $_POST['fvalor'];
 }
 
 include_once("conexao.php");
-$sql = "INSERT INTO notas (empresa, descricao, entrega, preco) VALUES ('$empresa', '$descri','$entrega', '$valor')";
+$sql = "INSERT INTO notas (empresa, descricao, entrega, vUnitario, vTotal) VALUES ('$empresa', '$descri','$entrega', '$valor')";
 // echo $sql;
 
 $res = mysqli_query($conn, $sql) or die("Erro ao retornar consulta");

@@ -27,7 +27,7 @@ echo $_SESSION['usuario'];
 
 include_once("conexao.php");
 
-$sql = "SELECT * FROM usuario WHERE nome = '$user' AND senha = '$senha'";
+$sql = "SELECT * FROM user WHERE nome = '$user' AND senha = '$senha'";
 $res = mysqli_query($conn, $sql) or die("erro ao retornar consulta");
 
 $registro = mysqli_fetch_array($res);
