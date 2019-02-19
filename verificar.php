@@ -46,7 +46,7 @@ while ($registro = mysqli_fetch_array($res)){
 		
 		
 		<td colspan="2">
-			<p><?php echo $registro['preco'] . "R$"?></p>
+			<p><?php echo $registro['vtotal'] . "R$"?></p>
 		</td>
 
 		
@@ -59,6 +59,7 @@ while ($registro = mysqli_fetch_array($res)){
 	
 <?php } ?>
 	
+
 	<tr>
 
 		<td colspan="8">
