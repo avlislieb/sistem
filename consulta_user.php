@@ -25,6 +25,7 @@ $user = $_POST['fuser'];
 $_SESSION['usuario'] = $user;
 echo $_SESSION['usuario'];
 
+
 include_once("conexao.php");
 
 $sql = "SELECT * FROM user WHERE nome = '$user' AND senha = '$senha'";

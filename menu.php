@@ -40,7 +40,7 @@
 		<br/>		
 		<tr>
 			<td>
-			<a href="#">modificar notas</a>
+			<a href="modificar.php">modificar notas</a>
 			</td>
 		</tr>
 		<tr>
